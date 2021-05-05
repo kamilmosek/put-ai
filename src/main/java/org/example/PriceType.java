@@ -1,13 +1,13 @@
 package org.example;
 
-public enum WineType {
-    SWEET("Sweet"),
-    NEUTRAL("Neutral"),
-    BITTER("Bitter");
+public enum PriceType {
+    LOW("Niska"),
+    MEDIUM("Średnia"),
+    HIGH("Wysoka");
 
     private final String name;
 
-    WineType(String name) {
+    PriceType(String name) {
         this.name = name;
     }
 
