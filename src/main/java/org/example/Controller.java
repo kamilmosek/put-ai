@@ -56,11 +56,15 @@ public class Controller implements Initializable {
                 ColorType.PINK
         ));
 
+        colorTypeComboBox.getSelectionModel().selectFirst();
+
         placeTypeComboBox.setItems(FXCollections.observableArrayList(
                 MeetType.FORMAL,
                 MeetType.CASUAL,
                 MeetType.SOCIAL
         ));
+
+        placeTypeComboBox.getSelectionModel().selectFirst();
 
         priceTypeComboBox.setItems(FXCollections.observableArrayList(
                 PriceType.LOW,
@@ -68,11 +72,15 @@ public class Controller implements Initializable {
                 PriceType.HIGH
         ));
 
+        priceTypeComboBox.getSelectionModel().selectFirst();
+
         foodTypeComboBox.setItems(FXCollections.observableArrayList(
                 FoodType.MEAT,
                 FoodType.SWEETS,
                 FoodType.FISH
         ));
+
+        foodTypeComboBox.getSelectionModel().selectFirst();
     }
 
 
