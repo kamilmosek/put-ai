@@ -496,7 +496,7 @@
 
  (defrule wine49
   (attribute (name color) (value red))
-  (attribute (name meeting) (value formal))
+  (attribute (name meeting) (value social))
   (attribute (name food) (value sweets))
    (attribute (name price) (value low))
    =>
@@ -508,7 +508,7 @@
   (attribute (name color) (value red))
   (attribute (name meeting) (value social))
   (attribute (name food) (value sweets))
-   (attribute (name price) (value meidum))
+   (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "VIVÉNT DE TANNAT LIMITED EDITION")))
    (printout t "VIVÉNT DE TANNAT LIMITED EDITION") crlf)
