@@ -93,7 +93,7 @@ public class Controller implements Initializable {
 
         clips.reset();
         clips.clear();
-        clips.load("wines2.clp");
+        clips.load("wine_rules.clp");
 
         if (colorType == ColorType.RED) {
             clips.assertString("(attribute (name color) (value red))");
