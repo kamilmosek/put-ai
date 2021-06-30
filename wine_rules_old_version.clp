@@ -12,84 +12,13 @@
 
 
 
-(defrule treeElimination1
-  (attribute (name meeting) (value social))
-  (attribute (name food) (value meat))
-  =>
-  (assert (attribute (name meeting_calculate) (value light)))
-  (assert (attribute (name food_calculate) (value salt))))
-
-
-(defrule treeElimination2
-  (attribute (name meeting) (value social))
-  (attribute (name food) (value fish))
-  =>
-  (assert (attribute (name meeting_calculate) (value light)))
-  (assert (attribute (name food_calculate) (value salt))))
-
-(defrule treeElimination3
-  (attribute (name meeting) (value social))
-  (attribute (name food) (value sweets))
-  =>
-  (assert (attribute (name meeting_calculate) (value light)))
-  (assert (attribute (name food_calculate) (value sweets))))
-
-
-(defrule treeElimination4
-  (attribute (name meeting) (value casual))
-  (attribute (name food) (value meat))
-  =>
-  (assert (attribute (name meeting_calculate) (value light)))
-  (assert (attribute (name food_calculate) (value salt))))
-
-
-(defrule treeElimination5
-  (attribute (name meeting) (value casual))
-  (attribute (name food) (value fish))
-  =>
-  (assert (attribute (name meeting_calculate) (value light)))
-  (assert (attribute (name food_calculate) (value salt))))
-
-(defrule treeElimination6
-  (attribute (name meeting) (value casual))
-  (attribute (name food) (value sweets))
-  =>
-  (assert (attribute (name meeting_calculate) (value light)))
-  (assert (attribute (name food_calculate) (value sweets))))
-
-
-(defrule treeElimination7
-  (attribute (name meeting) (value formal))
-  (attribute (name food) (value meat))
-  =>
-  (assert (attribute (name meeting_calculate) (value hard)))
-  (assert (attribute (name food_calculate) (value salt))))
-
-
-(defrule treeElimination8
-  (attribute (name meeting) (value formal))
-  (attribute (name food) (value fish))
-  =>
-  (assert (attribute (name meeting_calculate) (value hard)))
-  (assert (attribute (name food_calculate) (value salt))))
-
-(defrule treeElimination9
-  (attribute (name meeting) (value formal))
-  (attribute (name food) (value sweets))
-  =>
-  (assert (attribute (name meeting_calculate) (value hard)))
-  (assert (attribute (name food_calculate) (value sweets))))
-
-
-
-
 
 
 
 (defrule wine1
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value meat))
   (attribute (name price) (value low))
   =>
   (assert (attribute (name wine) (value "MONT MARÇAL MARCELONA BLANCO")))
@@ -98,8 +27,8 @@
 
  (defrule wine2
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value meat))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "CHABLIS")))
@@ -108,8 +37,8 @@
 
  (defrule wine3
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value meat))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "TOKAJI ASZU 6 PUTTONYOS")))
@@ -118,8 +47,8 @@
 
  (defrule wine4
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "NOVAPALMA PINOT GRIGIO ORGANIC")))
@@ -128,8 +57,8 @@
 
  (defrule wine5
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "CHARDONNAY SWEET NOBLE ROT")))
@@ -138,8 +67,8 @@
 
  (defrule wine6
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "Château d’Yquem 2013")))
@@ -148,8 +77,8 @@
 
  (defrule wine7
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value fish))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "VIÑA HERMOSA BLANCO")))
@@ -158,8 +87,8 @@
 
  (defrule wine8
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value fish))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "SAINT CLAIR WAIRAU RESERVE SAUVIGNON BLANC")))
@@ -168,8 +97,8 @@
 
  (defrule wine9
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value fish))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "CHASSAGNE-MONTRACHET LA GOUJONNE")))
@@ -178,8 +107,8 @@
 
  (defrule wine10
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value meat))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "COLLECTION 1508 RULANDSKÉ BÍLÉ")))
@@ -188,8 +117,8 @@
 
  (defrule wine11
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value meat))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "chablis")))
@@ -198,8 +127,8 @@
 
  (defrule wine12
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value meat))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "POUILLY-FUISSÉ")))
@@ -208,8 +137,8 @@
 
  (defrule wine13
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "novapalma pinot grigio organic")))
@@ -218,8 +147,8 @@
 
  (defrule wine14
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "chardonnay sweet noble rot")))
@@ -228,8 +157,8 @@
 
  (defrule wine15
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "Château d’Yquem 2013")))
@@ -238,8 +167,8 @@
 
  (defrule wine16
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value fish))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "chardonnay")))
@@ -248,8 +177,8 @@
 
  (defrule wine17
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value fish))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "SAINT CLAIR WAIRAU RESERVE SAUVIGNON BLANC")))
@@ -258,8 +187,8 @@
 
  (defrule wine18
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value fish))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "chassagne-montrachet la goijonne")))
@@ -268,8 +197,8 @@
 
  (defrule wine19
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value meat))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "bella blanco romano frizzante")))
@@ -278,8 +207,8 @@
 
  (defrule wine20
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value meat))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "diemersfontein carpe diem viognier")))
@@ -288,8 +217,8 @@
 
  (defrule wine21
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value meat))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "POUILLY-FUISSÉ")))
@@ -298,8 +227,8 @@
 
  (defrule wine22
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "la palma chardonnay")))
@@ -308,8 +237,8 @@
 
  (defrule wine23
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "chardonnay sweet noble rot")))
@@ -318,8 +247,8 @@
 
  (defrule wine24
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "franciacorta ca'del bosco cuvee prestige")))
@@ -328,8 +257,8 @@
 
  (defrule wine25
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value fish))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "villa brici sauvignon blanc")))
@@ -338,8 +267,8 @@
 
  (defrule wine26
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value fish))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "pouilly fume les charmelles")))
@@ -348,8 +277,8 @@
 
  (defrule wine27
   (attribute (name color) (value white))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value fish))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "pouilly-fuisse")))
@@ -358,8 +287,8 @@
 
  (defrule wine28
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value meat))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "CABERNET WINNICA TURNAU")))
@@ -367,8 +296,8 @@
 
  (defrule wine29
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value meat))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "TRABUCH")))
@@ -377,8 +306,8 @@
 
  (defrule wine30
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value meat))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "ABADÍA RETUERTA PAGO VALDEBELLÓN")))
@@ -387,8 +316,8 @@
 
  (defrule wine31
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "GEORGIAN VALLEYS KINDZMARAULI")))
@@ -397,8 +326,8 @@
 
  (defrule wine32
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "VIVÉNT DE TANNAT LIMITED EDITION")))
@@ -407,8 +336,8 @@
 
  (defrule wine33
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "GLAETZER AMON-RA")))
@@ -417,8 +346,8 @@
 
  (defrule wine34
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value fish))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "LA CAPITANA CARMÉNÈRE")))
@@ -427,8 +356,8 @@
 
  (defrule wine35
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value fish))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "ÓPALO MALBEC")))
@@ -437,8 +366,8 @@
 
  (defrule wine36
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value fish))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "LAS LAMAS 2017")))
@@ -447,8 +376,8 @@
 
  (defrule wine37
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value meat))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "LA VENDIMIA")))
@@ -457,8 +386,8 @@
 
  (defrule wine38
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value meat))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "CAMINS DEL PRIORAT")))
@@ -467,8 +396,8 @@
 
  (defrule wine39
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value meat))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "ABADÍA RETUERTA PAGO GARDUÑA")))
@@ -477,8 +406,8 @@
 
  (defrule wine40
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "GEORGIAN VALLEYS KINDZMARAULI")))
@@ -487,8 +416,8 @@
 
  (defrule wine41
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "VIVÉNT DE TANNAT LIMITED EDITION")))
@@ -497,8 +426,8 @@
 
  (defrule wine42
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "GLAETZER AMON-RA")))
@@ -507,8 +436,8 @@
 
  (defrule wine43
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value fish))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "DOMAINE DES MARRANS BEAUJOLAIS VILLAGES")))
@@ -517,8 +446,8 @@
 
  (defrule wine44
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value fish))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "CASAL DA COELHEIRA RESERVA TINTO")))
@@ -527,8 +456,8 @@
 
  (defrule wine45
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value fish))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "LAS LAMAS 2017")))
@@ -537,8 +466,8 @@
 
  (defrule wine46
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value meat))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "TARICHÚ MERLOT RESERVA 2019")))
@@ -547,8 +476,8 @@
 
  (defrule wine47
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value meat))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "RAMÓN BILBAO RESERVA")))
@@ -557,8 +486,8 @@
 
  (defrule wine48
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value meat))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "VOSNE ROMANÉE")))
@@ -567,8 +496,8 @@
 
  (defrule wine49
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "VALPOLICELLA CLASSICO")))
@@ -577,8 +506,8 @@
 
  (defrule wine50
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "VIVÉNT DE TANNAT LIMITED EDITION")))
@@ -587,8 +516,8 @@
 
  (defrule wine51
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "CHÂTEAU MARGAUX 2013")))
@@ -597,8 +526,8 @@
 
  (defrule wine52
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value fish))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "DOMAINE DES MARRANS BEAUJOLAIS VILLAGES")))
@@ -607,8 +536,8 @@
 
  (defrule wine53
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value fish))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "ENRIQUE FOSTER RESERVA MALBEC")))
@@ -617,8 +546,8 @@
 
  (defrule wine54
   (attribute (name color) (value red))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value fish))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "CHÂTEAU MARGAUX 2002")))
@@ -627,8 +556,8 @@
 
  (defrule wine55
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value meat))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "Tariquet Rosé")))
@@ -637,8 +566,8 @@
 
  (defrule wine56
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value meat))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "Domaine Montrose, Rosé, Pays d'Oc")))
@@ -647,8 +576,8 @@
 
  (defrule wine57
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value meat))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "Kracher, Rosenmuskateller No.2")))
@@ -657,8 +586,8 @@
 
  (defrule wine58
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "Domaine de Triennes Rose 2019")))
@@ -667,8 +596,8 @@
 
  (defrule wine59
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "Jolie-Pitt & Perrin, Miraval, Côtes de Provence")))
@@ -677,8 +606,8 @@
 
  (defrule wine60
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "Château d'Esclans, Whispering Angel")))
@@ -687,8 +616,8 @@
 
  (defrule wine61
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value fish))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "ESPRIT GASSIER")))
@@ -697,8 +626,8 @@
 
  (defrule wine62
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value fish))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "Tormaresca, Calafuria, Salento")))
@@ -707,8 +636,8 @@
 
  (defrule wine63
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value hard))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value formal))
+  (attribute (name food) (value fish))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "Billecart-Salmon Brut Rosé Champagne")))
@@ -717,8 +646,8 @@
 
  (defrule wine64
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value meat))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "ROSÉ WINNICA TURNAU")))
@@ -727,8 +656,8 @@
 
  (defrule wine65
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value meat))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "Joseph Mellot Le Rabault Sancerre Rosé")))
@@ -737,8 +666,8 @@
 
  (defrule wine66
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value meat))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "Kracher, Rosenmuskateller No.2")))
@@ -747,8 +676,8 @@
 
  (defrule wine67
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "Domaine Lafage Miraflors Rose 2019")))
@@ -757,8 +686,8 @@
 
  (defrule wine68
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "Maison No. 9 Rose")))
@@ -767,8 +696,8 @@
 
  (defrule wine69
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "Château d'Esclans, Whispering Angel")))
@@ -777,8 +706,8 @@
 
  (defrule wine70
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value fish))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "Pratsch Organic Rosé")))
@@ -787,8 +716,8 @@
 
  (defrule wine71
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value fish))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "Grenache Rosé")))
@@ -797,8 +726,8 @@
 
  (defrule wine72
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value casual))
+  (attribute (name food) (value fish))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "Billecart-Salmon Brut Rosé Champagne")))
@@ -807,8 +736,8 @@
 
  (defrule wine73
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value meat))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "RAMÓN BILBAO ROSADO")))
@@ -817,8 +746,8 @@
 
  (defrule wine74
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value meat))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "Mumm Napa Rosé")))
@@ -827,8 +756,8 @@
 
  (defrule wine75
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value meat))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "Louis Roederer et Philippe Starck Brut Nature Rosé")))
@@ -837,8 +766,8 @@
 
  (defrule wine76
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value msweets))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value msweets))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "LUCA BOSIO PIEMONTE DOC ROSATO")))
@@ -847,8 +776,8 @@
 
  (defrule wine77
  (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "Mumm Brut Rose")))
@@ -857,8 +786,8 @@
 
  (defrule wine78
  (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value sweets))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value sweets))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "Domaines Ott, Château Rommassan")))
@@ -869,8 +798,8 @@
 
  (defrule wine79
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value fish))
    (attribute (name price) (value low))
    =>
    (assert (attribute (name wine) (value "LUCA BOSIO PIEMONTE DOC ROSATO")))
@@ -880,8 +809,8 @@
 
  (defrule wine80
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value fish))
    (attribute (name price) (value medium))
    =>
    (assert (attribute (name wine) (value "Mumm Napa Rosé")))
@@ -890,13 +819,10 @@
 
  (defrule wine81
   (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
+  (attribute (name meeting) (value social))
+  (attribute (name food) (value fish))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "AIX Rosé 2020 Coteaux dAix en Provence")))
    (printout t "AIX Rose 2020 Coteaux dAix en Provence") crlf)
-
-
-
 
