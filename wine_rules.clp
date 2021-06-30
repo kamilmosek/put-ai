@@ -367,7 +367,7 @@
  (defrule wine36
   (attribute (name color) (value red))
   (attribute (name meeting) (value formal))
-  (attribute (name food) (value meat))
+  (attribute (name food) (value fish))
    (attribute (name price) (value high))
    =>
    (assert (attribute (name wine) (value "LAS LAMAS 2017")))
