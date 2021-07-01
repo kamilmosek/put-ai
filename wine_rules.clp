@@ -82,7 +82,7 @@
 
 
 
-(defrule wine1
+(defrule white1
   (attribute (name color) (value white))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value salt))
@@ -92,7 +92,7 @@
   (printout t "MONT MARÇAL MARCELONA BLANCO") crlf)
 
 
- (defrule wine2
+ (defrule white2
   (attribute (name color) (value white))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value salt))
@@ -102,7 +102,7 @@
    (printout t "CHABLIS") crlf)
 
 
- (defrule wine3
+ (defrule white3
   (attribute (name color) (value white))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value salt))
@@ -112,7 +112,7 @@
    (printout t "TOKAJI ASZU 6 PUTTONYOS") crlf)
 
 
- (defrule wine4
+ (defrule white4
   (attribute (name color) (value white))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value sweets))
@@ -122,7 +122,7 @@
    (printout t "NOVAPALMA PINOT GRIGIO ORGANIC") crlf)
 
 
- (defrule wine5
+ (defrule white5
   (attribute (name color) (value white))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value sweets))
@@ -132,7 +132,7 @@
    (printout t "CHARDONNAY SWEET NOBLE ROT") crlf)
 
 
- (defrule wine6
+ (defrule white6
   (attribute (name color) (value white))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value sweets))
@@ -142,7 +142,7 @@
    (printout t "Château d’Yquem 2013") crlf)
 
 
- (defrule wine7
+ (defrule white7
   (attribute (name color) (value white))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value salt))
@@ -152,7 +152,7 @@
    (printout t "bella blanco romano frizzante") crlf)
 
 
- (defrule wine8
+ (defrule white8
   (attribute (name color) (value white))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value salt))
@@ -162,7 +162,7 @@
    (printout t "diemersfontein carpe diem viognier") crlf)
 
 
- (defrule wine9
+ (defrule white9
   (attribute (name color) (value white))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value salt))
@@ -172,7 +172,7 @@
    (printout t "POUILLY-FUISSÉ") crlf)
 
 
- (defrule wine10
+ (defrule white10
   (attribute (name color) (value white))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value sweets))
@@ -182,7 +182,7 @@
    (printout t "la palma chardonnay") crlf)
 
 
- (defrule wine11
+ (defrule white11
   (attribute (name color) (value white))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value sweets))
@@ -192,7 +192,7 @@
    (printout t "chardonnay sweet noble rot") crlf)
 
 
- (defrule wine12
+ (defrule white12
   (attribute (name color) (value white))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value sweets))
@@ -202,7 +202,7 @@
    (printout t "franciacorta ca'del bosco cuvee prestige") crlf)
 
 
- (defrule wine13
+ (defrule red13
   (attribute (name color) (value red))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value salt))
@@ -211,7 +211,7 @@
    (assert (attribute (name wine) (value "CABERNET WINNICA TURNAU")))
    (printout t "CABERNET WINNICA TURNAU") crlf)
 
- (defrule wine14
+ (defrule red14
   (attribute (name color) (value red))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value salt))
@@ -221,7 +221,7 @@
    (printout t "TRABUCH") crlf)
 
 
- (defrule wine15
+ (defrule red15
   (attribute (name color) (value red))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value salt))
@@ -231,7 +231,7 @@
    (printout t "ABADÍA RETUERTA PAGO VALDEBELLÓN") crlf)
 
 
- (defrule wine16
+ (defrule red16
   (attribute (name color) (value red))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value sweets))
@@ -241,7 +241,7 @@
    (printout t "GEORGIAN VALLEYS KINDZMARAULI") crlf)
 
 
- (defrule wine17
+ (defrule red17
   (attribute (name color) (value red))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value sweets))
@@ -251,7 +251,7 @@
    (printout t "VIVÉNT DE TANNAT LIMITED EDITION") crlf)
 
 
- (defrule wine18
+ (defrule red18
   (attribute (name color) (value red))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value sweets))
@@ -261,7 +261,7 @@
    (printout t "GLAETZER AMON-RA") crlf)
 
 
- (defrule wine19
+ (defrule red19
   (attribute (name color) (value red))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value salt))
@@ -271,7 +271,7 @@
    (printout t "TARICHÚ MERLOT RESERVA 2019") crlf)
 
 
- (defrule wine20
+ (defrule red20
   (attribute (name color) (value red))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value salt))
@@ -281,7 +281,7 @@
    (printout t "RAMÓN BILBAO RESERVA") crlf)
 
 
- (defrule wine21
+ (defrule red21
   (attribute (name color) (value red))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value salt))
@@ -291,7 +291,7 @@
    (printout t "VOSNE ROMANÉE") crlf)
 
 
- (defrule wine22
+ (defrule red22
   (attribute (name color) (value red))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value sweets))
@@ -301,7 +301,7 @@
    (printout t "VALPOLICELLA CLASSICO") crlf)
 
 
- (defrule wine23
+ (defrule red23
   (attribute (name color) (value red))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value sweets))
@@ -311,7 +311,7 @@
    (printout t "VIVÉNT DE TANNAT LIMITED EDITION") crlf)
 
 
- (defrule wine24
+ (defrule red24
   (attribute (name color) (value red))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value sweets))
@@ -321,7 +321,7 @@
    (printout t "CHÂTEAU MARGAUX 2013") crlf)
 
 
- (defrule wine25
+ (defrule pink25
   (attribute (name color) (value pink))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value salt))
@@ -331,7 +331,7 @@
    (printout t "Tariquet Rosé") crlf)
 
 
- (defrule wine26
+ (defrule pink26
   (attribute (name color) (value pink))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value salt))
@@ -341,7 +341,7 @@
    (printout t "Domaine Montrose, Rosé, Pays d'Oc") crlf)
 
 
- (defrule wine27
+ (defrule pink27
   (attribute (name color) (value pink))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value salt))
@@ -351,7 +351,7 @@
    (printout t "Kracher, Rosenmuskateller No.2") crlf)
 
 
- (defrule wine28
+ (defrule pink28
   (attribute (name color) (value pink))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value sweets))
@@ -361,7 +361,7 @@
    (printout t "Domaine de Triennes Rose 2019") crlf)
 
 
- (defrule wine29
+ (defrule pink29
   (attribute (name color) (value pink))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value sweets))
@@ -371,7 +371,7 @@
    (printout t "Jolie-Pitt & Perrin, Miraval, Côtes de Provence") crlf)
 
 
- (defrule wine30
+ (defrule pink30
   (attribute (name color) (value pink))
   (attribute (name meeting_calculate) (value hard))
   (attribute (name food_calculate) (value sweets))
@@ -381,7 +381,7 @@
    (printout t "Château d'Esclans, Whispering Angel") crlf)
 
 
- (defrule wine31
+ (defrule pink31
   (attribute (name color) (value pink))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value salt))
@@ -391,7 +391,7 @@
    (printout t "RAMÓN BILBAO ROSADO") crlf)
 
 
- (defrule wine32
+ (defrule pink32
   (attribute (name color) (value pink))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value salt))
@@ -401,17 +401,7 @@
    (printout t "Mumm Napa Rosé") crlf)
 
 
- (defrule wine33
-  (attribute (name color) (value pink))
-  (attribute (name meeting_calculate) (value light))
-  (attribute (name food_calculate) (value salt))
-   (attribute (name price) (value high))
-   =>
-   (assert (attribute (name wine) (value "Louis Roederer et Philippe Starck Brut Nature Rosé")))
-   (printout t "Louis Roederer et Philippe Starck Brut Nature Rosé") crlf)
-
-
- (defrule wine34
+ (defrule pink33
   (attribute (name color) (value pink))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value sweets))
@@ -421,7 +411,7 @@
    (printout t "LUCA BOSIO PIEMONTE DOC ROSATO") crlf)
 
 
- (defrule wine35
+ (defrule pink34
  (attribute (name color) (value pink))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value sweets))
@@ -431,7 +421,7 @@
    (printout t "Mumm Brut Rose") crlf)
 
 
- (defrule wine36
+ (defrule pink35
  (attribute (name color) (value pink))
   (attribute (name meeting_calculate) (value light))
   (attribute (name food_calculate) (value sweets))
@@ -441,7 +431,7 @@
    (printout t "Domaines Ott, Château Rommassan") crlf)
 
 
-  (defrule wine37
+  (defrule pink36
   (attribute (name color) (value pink))
    (attribute (name meeting_calculate) (value light))
    (attribute (name food_calculate) (value salt))
